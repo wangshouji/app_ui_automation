@@ -1,0 +1,421 @@
+platform : android
+automation : uiautomator2
+automationName : uiautomator2
+udid : 5554
+port : 4725
+bp : 4900
+actions:
+  - action : click
+    idOrXpath : de.b.connected.cn.int:id/eula_read_terms_compound_button
+    times : 3
+    screenshot : 单选框
+    page  :
+      #同意页面
+      - name : agree
+
+      - id : de.b.connected.cn.int:id/terms_of_use_button
+        alias : termsofconditions
+
+      - id : de.b.connected.cn.int:id/privacy_policy_button
+        alias : privacypolicy
+
+      - id : de.b.connected.cn.int:id/connected_drive_terms_button
+        alias : connecteddriveterms
+
+      - id : de.b.connected.cn.int:id/loyalty_terms_button
+        alias : baccount
+
+      - id : de.b.connected.cn.int:id/eula_read_terms_compound_button
+        alias : 单选框
+
+      - id : de.b.connected.cn.int:id/eula_accept_button
+        alias : 同意
+
+  - action : click
+    idOrXpath : de.b.connected.cn.int:id/eula_accept_button
+    screenshot : 同意
+    times : 3
+
+
+  - action : click
+    idOrXpath : de.b.connected.cn.int:id/next_button
+    times : 3
+    screenshot : 下一步
+    page :
+      - name : next
+
+      - id : de.b.connected.cn.int:id/next_button
+        alias : 下一步
+
+      - id : de.b.connected.cn.int:id/skip_button
+        alias : 跳过
+
+  - action : click
+    idOrXpath: de.b.connected.cn.int:id/next_button
+    screenshot : 下一步
+    times: 3
+
+  - action : click
+    idOrXpath: de.b.connected.cn.int:id/next_button
+    screenshot : 完成
+    times: 3
+    page :
+      - name : done
+
+      - id : de.b.connected.cn.int:id/done_button
+        alias : 完成
+
+  - action : click
+    idOrXpath : de.b.connected.cn.int:id/done_button
+    screenshot : 权限框
+    times : 3
+    page :
+      - name : permission
+
+      - id : com.android.packageinstaller:id/permission_allow_button
+        alias : 权限框
+
+      - id : com.android.packageinstaller:id/permission_deny_button
+        alias : deny
+
+  - action : click
+    idOrXpath : com.android.packageinstaller:id/permission_allow_button
+    screenshot : 登陆
+    times : 3
+    page :
+      - name : login
+
+      - id : de.b.connected.cn.int:id/connected_drive_phone_number_edit_text
+        alias : 账号
+
+      - id : de.b.connected.cn.int:id/password_edit_text
+        alias : 密码
+
+      - id : de.b.connected.cn.int:id/login_button
+        alias : 登陆
+
+  - action : 18621263786
+    idOrXpath : de.b.connected.cn.int:id/connected_drive_phone_number_edit_text
+    screenshot : 账号
+    times : 3
+
+  - action : 1qaz2wsx
+    idOrXpath : de.b.connected.cn.int:id/password_edit_text
+    screenshot : 密码
+    times : 3
+
+  - action : click
+    idOrXpath : de.b.connected.cn.int:id/login_button
+    screenshot : 设置pin页面
+    times : 30
+    page :
+      - name : createpin
+
+      - xpath : //android.widget.TextView[@text='1']
+        alias : 数字1
+
+      - xpath: //android.widget.TextView[@text='2']
+        alias: 数字2
+
+      - xpath: //android.widget.TextView[@text='3']
+        alias: 数字3
+
+      - xpath: //android.widget.TextView[@text='4']
+        alias: 数字4
+
+  - action : click
+    idOrXpath : //android.widget.TextView[@text='1']
+    screenshot : 数字1
+    times : 3
+
+  - action : click
+    idOrXpath : //android.widget.TextView[@text='2']
+    screenshot : 数字2
+    times : 3
+
+  - action : click
+    idOrXpath : //android.widget.TextView[@text='3']
+    screenshot : 数字3
+    times : 3
+
+  - action  : click
+    idOrXpath : //android.widget.TextView[@text='4']
+    screenshot : 数字4
+    times : 3
+
+  - action  : click
+    idOrXpath : //android.widget.TextView[@text='1']
+    times : 1
+
+  - action : click
+    idOrXpath : //android.widget.TextView[@text='2']
+    times : 1
+
+  - action : click
+    idOrXpath : //android.widget.TextView[@text='3']
+    times : 1
+
+  - action : click
+    idOrXpath : //android.widget.TextView[@text='4']
+    times : 1
+    page :
+      - name : permissionsNeeded
+
+      - id : de.b.connected.cn.int:id/continue_button
+
+
+########
+#同意页面
+agree:
+  - bounds : [100,200][300,400]
+    alias : 提示信息
+
+  - id : [][]
+    alias : password
+
+  - id : de.b.connected.cn.int:id/connected_drive_terms_button
+    alias : connecteddriveterms
+
+  - id : de.b.connected.cn.int:id/loyalty_terms_button
+    alias : baccount
+
+  - id : de.b.connected.cn.int:id/eula_read_terms_compound_button
+    alias : 单选框
+
+  - id : de.b.connected.cn.int:id/eula_accept_button
+    alias : 同意
+
+
+#轮播页面
+connect:
+  - id : de.b.connected.cn.int:id/skip_button
+    alias : skip
+
+  - id : de.b.connected.cn.int:id/next_button
+    alias : 下一步
+
+  - id : de.b.connected.cn.int:id/tutorial_page_title
+    alias : connect
+
+  - id : de.b.connected.cn.int:id/tutorial_page_description
+    alias : navigation
+
+  - id : de.b.connected.cn.int:id/tutorial_page_image
+    alias : weltimage
+
+  - id : de.b.connected.cn.int:id/done_button
+    alias : 完成
+
+#登陆页面
+login:
+  - id : com.android.packageinstaller:id/permission_allow_button
+    alias : 权限框
+
+  - id : com.android.packageinstaller:id/permission_deny_button
+    alias : deny
+
+  - id : de.b.connected.cn.int:id/connected_drive_phone_number_edit_text
+    alias : 账号
+
+  - id : de.b.connected.cn.int:id/password_edit_text
+    alias : 密码
+
+  - id : de.b.connected.cn.int:id/login_button
+    alias : 登陆
+
+#设置pin
+createpin:
+  - xpath : //android.widget.TextView[@text='1']
+    alias : 1
+
+  - xpath : //android.widget.TextView[@text='2']
+    alias : 2
+
+  - xpath : //android.widget.TextView[@text='3']
+    alias : 3
+
+  - xpath : //android.widget.TextView[@text='4']
+    alias : 4
+
+#setting permissions
+permissions:
+  - id : de.b.connected.cn.int:id/continue_button
+    alias : 跳过
+
+  - id : com.android.packageinstaller:id/permission_allow_button
+    alias : 允许
+
+  - id : android:id/button1
+    alias : 确定
+
+sidebar:
+  - xpath : //android.widget.CheckedTextView[@text='Vehicle']
+    alias : 车辆
+
+  - xpath : //android.widget.CheckedTextView[@text='Activity']
+    alias : 活动
+
+  - xpath : //android.widget.CheckedTextView[@text='Destinations']
+    alias : 目的地
+
+  - xpath : //android.widget.CheckedTextView[@text='Services']
+    alias : 服务
+
+  - xpath : //android.widget.CheckedTextView[@text='ConnectedDrive Service']
+    alias : 连接驱动服务
+
+  - xpath : //android.widget.CheckedTextView[@text='My Pocket']
+    alias : 我的钱包
+
+  - xpath : //android.widget.CheckedTextView[@text='Profile']
+    alias : 配置
+
+  - xpath : //android.widget.CheckedTextView[@text='My Order']
+    alias : 我的订单
+
+  - xpath : //android.widget.CheckedTextView[@text='Settings']
+    alias : 设置
+
+  - xpath : //android.widget.CheckedTextView[@text='Legal']
+    alias : 规则
+
+  - id : de.b.connected.cn.int:id/user_salutation_text_view
+    alias : 我的名称
+
+vehicle:
+  - xpath : //android.widget.ImageButton
+    alias : 侧滑栏
+
+  - id : de.b.connected.cn.int:id/toolbar_title
+    alias : 标题
+
+  - xpath : //android.widget.TextView[@text='REMOTE']
+    alias : 远程
+
+  - xpath : //android.widget.TextView[@text='INFO']
+    alias : 信息
+
+  - xpath : //android.widget.ImageView[1]
+    alias : 上锁
+
+  - xpath : //android.widget.ImageView[2]
+    alias : 解锁
+
+  - xpath : //android.widget.ImageView[3]
+    alias : 闪灯
+
+  - xpath : //android.widget.ImageView[4]
+    alias : 鸣笛
+
+  - xpath : //android.widget.TextView[@text='Locate Vehicle']
+    alias : 查询车辆
+
+  - xpath : //android.widget.TextView[@text='Ventilate Now']
+    alias : 现在通风
+
+  - xpath : //android.widget.TextView[@text='Start Ventilate Timer']
+    alias : 启动通风计时器
+
+  - xpath : //android.widget.TextView[@text='--'][1]
+    alias : 平均速度
+
+  - xpath : //android.widget.TextView[@text='--'][2]
+    alias : 平均消费
+
+  - id : de.b.connected.cn.int:id/a4a_mileage_value_text_view
+    alias : 里程
+
+  - id : de.b.connected.cn.int:id/remote_history_button
+    alias : 远程记录
+
+lock:
+  - id : de.b.connected.cn.int:id/remote_action_text_view
+    alias : 锁门信息
+
+  - id : de.b.connected.cn.int:id/cancel_remote_action_button
+    alias : 取消
+
+  - id : de.b.connected.cn.int:id/execute_remote_action_button
+    alias : 确认锁门
+
+unlock:
+  - id : de.b.connected.cn.int:id/remote_action_text_view
+    alias : 解锁信息
+
+  - id : de.b.connected.cn.int:id/cancel_remote_action_button
+    alias : 取消
+
+  - id : de.b.connected.cn.int:id/execute_remote_action_button
+    alias : 确认解锁
+
+headlights:
+  - id : de.b.connected.cn.int:id/remote_action_text_view
+    alias : 解锁信息
+
+  - id : de.b.connected.cn.int:id/cancel_remote_action_button
+    alias : 取消
+
+  - id : de.b.connected.cn.int:id/execute_remote_action_button
+    alias : 确认闪灯
+
+sounds:
+  - id : de.b.connected.cn.int:id/remote_action_text_view
+    alias : 鸣笛信息
+
+  - id : de.b.connected.cn.int:id/cancel_remote_action_button
+    alias : 取消
+
+  - id : de.b.connected.cn.int:id/execute_remote_action_button
+    alias : 确认鸣笛
+
+finderVehicle:
+  - xpath : //android.widget.ImageButton
+    alias : 返回
+
+  - id : de.b.connected.cn.int:id/click_switch_map_view
+    alias : 切换
+
+  - id : de.b.connected.cn.int:id/click_locate_me
+    alias : 定位
+
+  - id : de.b.connected.cn.int:id/click_new_locate_request
+    alias : 刷新
+
+ventilate:
+  - id : de.b.connected.cn.int:id/remote_action_text_view
+    alias : 通风信息
+
+  - id : de.b.connected.cn.int:id/cancel_remote_action_button
+    alias : 取消
+
+  - id : de.b.connected.cn.int:id/execute_remote_action_button
+    alias : 确认打开通风
+
+ventilateTimer:
+  - id : android:id/button1
+    alias : 确认
+
+  - id : android:id/button2
+    alias : 取消
+
+  - id : android:id/toggle_mode
+    alias : 切换模式
+
+  - id : android:id/input_hour
+    alias : 小时
+
+  - id : android:id/input_minute
+    alias : 分钟
+
+  - id : android:id/am_pm_spinner
+    alias : 上下午
+
+history:
+  - xpath : //android.widget.TextView[@text='Climate Timer']
+    alias : 定时器历史
+
+activity:
+  - id : de.b.connected.cn.int:id/add_destination_button
+    alias : 添加目的地
+
+destinations:

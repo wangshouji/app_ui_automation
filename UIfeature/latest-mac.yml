@@ -1,0 +1,12 @@
+version: 1.11.0
+files:
+  - url: Appium-1.11.0-mac.zip
+    sha512: qXZmzaE8X0ACf5sv/OR45WBn4y7enaKVlkrhzpIHCMCUo5KuWciQKXZbIpchG9dxEfmowPfpogfi27JvJG24UQ==
+    size: 187552083
+    blockMapSize: 187132
+  - url: Appium-1.11.0.dmg
+    sha512: j0ZAxqgs37taA9zH+cncJ/ZdmiqEI5/fzOo00NlKvzDfnsxyHuOVUm+UtXGQH1UaMlfv4/P/n9aFHYOni0QDDw==
+    size: 164411003
+path: Appium-1.11.0-mac.zip
+sha512: qXZmzaE8X0ACf5sv/OR45WBn4y7enaKVlkrhzpIHCMCUo5KuWciQKXZbIpchG9dxEfmowPfpogfi27JvJG24UQ==
+releaseDate: '2019-03-01T20:18:26.606Z'

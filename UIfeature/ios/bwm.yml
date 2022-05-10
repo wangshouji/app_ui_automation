@@ -1,0 +1,336 @@
+platform : android
+automation : appium
+automationName : XCUITest
+udid : 5554
+port : 4725
+actions :
+  - action : swipe left
+    idOrXpath : null
+    times : 20
+    screenshot : 轮播页面
+    page :
+      - name : lunbo
+
+      - id : Skip Button
+        alias : 跳过
+
+  - action : click
+    idOrXpath : Skip Button
+    times : 3
+    screenshot : 同意页面
+    page :
+      - name : agree
+
+      - id : Consent Switch
+        alias : 单选框
+
+      - id : Accept Button
+        alias : 同意
+
+  - action : click
+    idOrXpath : Consent Switch
+    times : 3
+
+  - action : click
+    idOrXpath : Accept Button
+    times : 3
+    screenshot : 登陆页面
+    page :
+      - name : login
+
+      - id : Phone Number Textbox
+        alias : 手机号码
+
+      - id : Password Textbox
+        alias : 密码
+
+      - id : Login Button
+        alias : 登陆
+
+      - id : Forgot Password Button
+        alias : 忘了密码
+
+      - id : Create Account Button
+        alias : 创建账户
+
+  - action : 18621263786
+    idOrXpath : Phone Number Textbox
+    times : 3
+
+  - action : 1qaz2wsx
+    idOrXpath : Password Textbox
+    times : 3
+
+  - action : click
+    idOrXpath : Login Button
+    times : 3
+    screenshot : 设置pin页面
+    page :
+      - name : setpin
+
+      - id : 1
+        alias : 数字1
+
+      - id : 2
+        alias : 数字2
+
+      - id : 3
+        alias : 数字3
+
+      - id : 4
+        alias : 数字4
+
+  - action : click
+    idOrXpath : 1
+    times : 2
+
+  - action : click
+    idOrXpath: 2
+    times: 2
+
+  - action: click
+    idOrXpath: 3
+    times: 2
+
+  - action: click
+    idOrXpath: 4
+    times: 2
+
+  - action: click
+    idOrXpath: 1
+    times: 2
+
+  - action: click
+    idOrXpath: 2
+    times: 2
+
+  - action: click
+    idOrXpath: 3
+    times: 2
+
+  - action: click
+    idOrXpath: 4
+    times: 2
+    screenshot : 开始体验页面
+    page :
+      - name : touchpage
+
+      - id :  Enable Touch ID Button
+        alias : 开始体验
+
+  - action : click
+    idOrXpath : Enable Touch ID Button
+    times : 3
+    screenshot : 主页面
+    page :
+      - name : mainpage
+
+      - id : 您好泽连
+        alias : 您好泽连
+
+      - id : Vehicle List Button
+        alias : 车辆列表
+
+      - id : 远程
+        alias : 远程
+
+      - id : 信息
+        alias : 信息
+
+      - id : Lock Button
+        alias : 上锁
+
+      - id : Unlock Button
+        alias : 解锁
+
+      - id : Light Flash Button
+        alias : 闪灯
+
+      - id : Horn Blow Button
+        alias : 鸣笛
+
+      - id : 定位车辆
+        alias : 定位车辆
+
+      - id : 立即通风
+        alias : 立即通风
+
+      - id : 启动空调/通风定时器
+        alias : 启动空调/通风定时器
+
+      - id : 车辆
+        alias : 车辆
+
+      - id : 目的地
+        aiias : 目的地
+
+      - id : 活动
+        alias : 活动
+
+      - id : 服务
+        alias : 服务
+
+      - id : 更多
+        alias : 更多
+
+  - action : click
+    idOrXpath : Vehicle List Button
+    times : 2
+    screenshot : 选择车辆页面
+    page :
+      - name : selectVehicle
+
+      - id : SelectVehicleHighlight
+        alias : 选择车辆
+
+      - id : 返回
+        alias : 返回
+
+  - action : click
+    idOrXpath : 返回
+    times : 2
+
+  - aciton : click
+    idOrXpath : 信息
+    times : 2
+    screenshot : 信息页面
+    page :
+      - name : infopage
+
+      - id : supportedFeaturesEnabled
+        alias : 支持功能
+
+  - action : click
+    idOrXpath : supportedFeaturesEnabled
+    times : 2
+    screenshot : 支持功能列表页面
+    page :
+      - name : upportedFeaturespage
+
+      - id : 定位车辆
+        alias : 定位车辆
+
+  - action : click
+    idOrXpath : 远程
+    times : 2
+
+  - action : click
+    idOrXpath : Lock Button
+    times : 2
+    screenshot : 上锁页面
+    page :
+      - name : lockpage
+
+      - id : Cancel Button
+        alias : 取消
+
+      - id : Confirm Button
+        alias : 确认
+
+  - action : click
+    idOrXpath : Confirm Button
+    times : 2
+
+  - action : click
+    idOrXpath : Unlock Button
+    times : 2
+
+  - action : click
+    idOrXpath : Confirm Button
+    times : 2
+
+  - action : click
+    idOrXpath : Light Flash Button
+    times : 2
+
+  - action : click
+    idOrXpath : Confirm Button
+    times : 2
+
+  - action : click
+    idOrXpath : Horn Blow Button
+    times : 2
+
+  - action : click
+    idOrXpath : Confirm Button
+    times : 2
+
+  - action : click
+    idOrXpath : 定位车辆
+    times : 2
+    screenshot : 定位车辆页面
+    page :
+      - name : localVehiclepage
+
+      - id : Traffic View Type Button
+        alias : 路况
+
+      - id : Toggle Range Map Button
+        alias : 地图模式
+
+      - id : Center User Position Button
+        alias : 重新定位
+
+      - id : Center Car Position Button
+        alias : 刷新位置
+
+      - id : 返回
+        alias : 返回
+
+  - action : click
+    idOrXpath : 返回
+    times : 2
+
+  - action : click
+    idOrXpath : 立即通风
+    times : 2
+    screenshot : 立即通风页面
+
+  - action : click
+    idOrXpath : Confirm Button
+    times : 2
+
+  - action : click
+    idOrXpath : 启动空调/通风定时器
+    times : 2
+    screenshot : 启动空调页面
+    page :
+      - name : kongtiao
+
+      - id : 发送开始时间
+        alias : 发送开始时间
+
+      - id : 关闭开始时间
+        alias : 关闭开始时间
+
+      - id : 返回
+        alias : 返回
+
+  - action : click
+    idOrXpath : 目的地
+    times : 2
+    screenshot : 目的地页面
+    page :
+      - name : mudipage
+
+      - id: Traffic View Type Button
+        alias: 路况
+
+      - id: Toggle Range Map Button
+        alias: 地图模式
+
+      - id: Center User Position Button
+        alias: 重新定位
+
+      - id: Center Car Position Button
+        alias: 刷新位置
+
+  - action : click
+    idOrXpath : 活动
+    times : 2
+    screenshot : 活动页面
+    page :
+      - name  : activepage
+
+      - id : wu
+        alias : wu

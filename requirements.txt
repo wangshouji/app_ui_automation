@@ -1,0 +1,12 @@
+pytest==4.0.1
+pytest-allure-adaptor==1.7.10
+pytest-html==1.19.0
+selenium==3.141.0
+Appium-Python-Client==0.38
+jieba==0.39
+lxml==4.3.1
+PyYAML==3.13
+parse==1.11.1
+parse-type==0.4.2
+Pillow==5.4.1
+uiautomator2==0.1.11
